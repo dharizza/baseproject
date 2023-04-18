@@ -1,0 +1,31 @@
+uuid: ea875f8b-52fc-425c-9bb3-2c81c361d295
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.400x400
+    - image.style.banner_1200x300
+    - image.style.max_2600x2600
+    - image.style.thumbnail
+  theme:
+    - olivero
+id: banner_images
+label: 'Banner images'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: max_2600x2600
+    breakpoint_id: olivero.grid-max
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: banner_1200x300
+    breakpoint_id: olivero.nav
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: 400x400
+    breakpoint_id: olivero.sm
+    multiplier: 1x
+breakpoint_group: olivero
+fallback_image_style: thumbnail
