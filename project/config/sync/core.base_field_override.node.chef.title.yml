@@ -1,0 +1,18 @@
+uuid: cadf485b-3826-4edc-86b9-1a330305fb96
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.chef
+id: node.chef.title
+field_name: title
+entity_type: node
+bundle: chef
+label: 'Chef name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -7,7 +7,9 @@ dependencies:
     - field.field.node.recipes.field_cook_time
     - field.field.node.recipes.field_cuisine
     - field.field.node.recipes.field_difficulty
+    - field.field.node.recipes.field_format
     - field.field.node.recipes.field_ingredients
+    - field.field.node.recipes.field_instructions
     - field.field.node.recipes.field_media
     - node.type.recipes
   module:
@@ -50,6 +52,14 @@ content:
     third_party_settings: {  }
     weight: 106
     region: content
+  field_format:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 107
+    region: content
   field_ingredients:
     type: string
     label: above
@@ -57,6 +67,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 102
+    region: content
+  field_instructions:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 108
     region: content
   field_media:
     type: entity_reference_entity_view

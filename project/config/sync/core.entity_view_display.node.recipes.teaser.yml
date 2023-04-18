@@ -8,7 +8,9 @@ dependencies:
     - field.field.node.recipes.field_cook_time
     - field.field.node.recipes.field_cuisine
     - field.field.node.recipes.field_difficulty
+    - field.field.node.recipes.field_format
     - field.field.node.recipes.field_ingredients
+    - field.field.node.recipes.field_instructions
     - field.field.node.recipes.field_media
     - node.type.recipes
   module:
@@ -36,5 +38,7 @@ hidden:
   field_cook_time: true
   field_cuisine: true
   field_difficulty: true
+  field_format: true
   field_ingredients: true
+  field_instructions: true
   field_media: true
