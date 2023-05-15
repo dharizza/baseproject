@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "beccdefbb499ad79a5c92202417b308d",
+    "content-hash": "99c34db86e822a564d1888aed156e521",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1812,6 +1812,71 @@
             "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core."
         },
         {
+            "name": "drupal/default_content_deploy",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/default_content_deploy.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/default_content_deploy-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "b382dd658965a37bbe6b95788209843f0bb1fd43"
+            },
+            "require": {
+                "drupal/core": "^9.2 || ^10.0",
+                "drupal/hal": "*",
+                "php": ">=7.3",
+                "rogervila/array-diff-multidimensional": "^2.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1640711736",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Martin Klíma",
+                    "homepage": "https://www.drupal.org/user/340058",
+                    "email": "martin.klima@hqis.cz"
+                },
+                {
+                    "name": "Jakub Hnilička",
+                    "homepage": "https://www.drupal.org/user/2784335"
+                },
+                {
+                    "name": "Radoslav Terezka",
+                    "homepage": "https://www.drupal.org/user/3289357"
+                },
+                {
+                    "name": "Markus Kalkbrenner",
+                    "homepage": "https://www.drupal.org/user/124705"
+                }
+            ],
+            "description": "Drupal 9 module for exporting and deploying content in *.json files.",
+            "homepage": "https://www.drupal.org/project/default_content_deploy",
+            "support": {
+                "source": "https://git.drupalcode.org/project/default_content_deploy"
+            }
+        },
+        {
             "name": "drupal/devel",
             "version": "5.1.1",
             "source": {
@@ -1876,6 +1941,58 @@
                 "source": "https://gitlab.com/drupalspoons/devel",
                 "issues": "https://gitlab.com/drupalspoons/devel/-/issues",
                 "slack": "https://drupal.slack.com/archives/C012WAW1MH6"
+            }
+        },
+        {
+            "name": "drupal/hal",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/hal.git",
+                "reference": "2.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/hal-2.0.1.zip",
+                "reference": "2.0.1",
+                "shasum": "606106bd17e7691611c0bd22b4aed9888a6b6983"
+            },
+            "require": {
+                "drupal/core": "^10"
+            },
+            "require-dev": {
+                "drupal/aggregator": "2.x-dev",
+                "drupal/entity_reference_revisions": "1.x-dev"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.1",
+                    "datestamp": "1658902138",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "bbrala",
+                    "homepage": "https://www.drupal.org/user/3366066"
+                },
+                {
+                    "name": "larowlan",
+                    "homepage": "https://www.drupal.org/user/395439"
+                }
+            ],
+            "description": "Hypermedia Application Language (HAL)",
+            "homepage": "https://www.drupal.org/project/hal",
+            "support": {
+                "source": "https://git.drupalcode.org/project/hal"
             }
         },
         {
@@ -3621,6 +3738,49 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "rogervila/array-diff-multidimensional",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rogervila/array-diff-multidimensional.git",
+                "reference": "d5afb18bfc256bf9d792594fa998f7af68179db0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rogervila/array-diff-multidimensional/zipball/d5afb18bfc256bf9d792594fa998f7af68179db0",
+                "reference": "d5afb18bfc256bf9d792594fa998f7af68179db0",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8 || ^5.0 || ^6.0 || ^7.0 || ^8.0 || ^9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Rogervila\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roger Vilà",
+                    "email": "rogervila@me.com"
+                }
+            ],
+            "description": "Compare the difference between two multidimensional arrays",
+            "support": {
+                "issues": "https://github.com/rogervila/array-diff-multidimensional/issues",
+                "source": "https://github.com/rogervila/array-diff-multidimensional/tree/2.1.0"
+            },
+            "time": "2021-10-28T08:07:19+00:00"
         },
         {
             "name": "symfony/console",
