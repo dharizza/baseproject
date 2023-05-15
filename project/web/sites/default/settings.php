@@ -762,6 +762,7 @@ if (file_exists(__DIR__ . '/settings.ddev.php') && getenv('IS_DDEV_PROJECT') == 
 }
 
 $settings['config_sync_directory'] = '../config/sync';
+$settings['default_content_deploy_content_directory'] = '../content';
 
 /**
  * Load local development override configuration, if available.
