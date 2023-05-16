@@ -3,7 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.base_field_override.node.recipes.title
     - field.field.node.recipes.body
+    - field.field.node.recipes.field_chef
     - field.field.node.recipes.field_cook_time
     - field.field.node.recipes.field_cuisine
     - field.field.node.recipes.field_difficulty
@@ -13,9 +15,164 @@ dependencies:
     - field.field.node.recipes.field_media
     - node.type.recipes
   module:
+    - layout_builder
+    - layout_discovery
     - options
     - text
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Banner
+          context_mapping: {  }
+        components:
+          022e0ecc-52ad-4852-9922-984ea3b13fc1:
+            uuid: 022e0ecc-52ad-4852-9922-984ea3b13fc1
+            region: content
+            configuration:
+              id: 'field_block:node:recipes:field_media'
+              label: Media
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: banner_images
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: Content
+          context_mapping: {  }
+          column_widths: 33-67
+        components:
+          cc828ad5-f5ec-44cc-b0f6-08ac3c7df640:
+            uuid: cc828ad5-f5ec-44cc-b0f6-08ac3c7df640
+            region: first
+            configuration:
+              id: 'field_block:node:recipes:field_cuisine'
+              label: Cuisine
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          126b2f8a-23b5-49de-8b94-8c5294408ba7:
+            uuid: 126b2f8a-23b5-49de-8b94-8c5294408ba7
+            region: first
+            configuration:
+              id: 'field_block:node:recipes:field_difficulty'
+              label: Difficulty
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: list_default
+                label: inline
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          0872fbc6-8b71-4198-8c13-5da04bea9d7f:
+            uuid: 0872fbc6-8b71-4198-8c13-5da04bea9d7f
+            region: first
+            configuration:
+              id: 'field_block:node:recipes:field_cook_time'
+              label: 'Cook time'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: number_integer
+                label: inline
+                settings:
+                  thousand_separator: ' '
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          d9760ed1-1a55-44be-a856-7bfe49829365:
+            uuid: d9760ed1-1a55-44be-a856-7bfe49829365
+            region: second
+            configuration:
+              id: 'field_block:node:recipes:field_ingredients'
+              label: Ingredients
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          4048d4c6-b73b-4b97-ace6-76b999e925f1:
+            uuid: 4048d4c6-b73b-4b97-ace6-76b999e925f1
+            region: second
+            configuration:
+              id: 'field_block:node:recipes:field_instructions'
+              label: Instructions
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          d99084a7-9354-4fc8-8bcd-06eb4d9982b6:
+            uuid: d99084a7-9354-4fc8-8bcd-06eb4d9982b6
+            region: second
+            configuration:
+              id: 'field_block:node:recipes:title'
+              label: 'Recipe name'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
 id: node.recipes.default
 targetEntityType: node
 bundle: recipes
@@ -27,6 +184,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_chef:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 109
     region: content
   field_cook_time:
     type: number_integer
