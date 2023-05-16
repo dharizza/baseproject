@@ -1,0 +1,29 @@
+uuid: 23686409-3848-4cc8-ba7d-7803e6946689
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.featured_recipes
+    - field.storage.block_content.field_featured_recipes
+    - node.type.recipes
+id: block_content.featured_recipes.field_featured_recipes
+field_name: field_featured_recipes
+entity_type: block_content
+bundle: featured_recipes
+label: 'Featured recipes'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      recipes: recipes
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,19 @@
+uuid: 3620fabc-1081-400d-ada4-b518afc68cc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_instructions
+    - node.type.recipes
+id: node.recipes.field_instructions
+field_name: field_instructions
+entity_type: node
+bundle: recipes
+label: Instructions
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

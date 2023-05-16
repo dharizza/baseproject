@@ -1,0 +1,17 @@
+uuid: ee522313-aac4-41b8-9a00-47b7d844009b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Chef
+type: chef
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

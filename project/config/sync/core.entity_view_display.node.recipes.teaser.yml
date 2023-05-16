@@ -1,0 +1,58 @@
+uuid: 83e3ef57-e476-40bf-91e6-1bfa0e4bbeda
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.recipes.body
+    - field.field.node.recipes.field_chef
+    - field.field.node.recipes.field_cook_time
+    - field.field.node.recipes.field_cuisine
+    - field.field.node.recipes.field_difficulty
+    - field.field.node.recipes.field_format
+    - field.field.node.recipes.field_ingredients
+    - field.field.node.recipes.field_instructions
+    - field.field.node.recipes.field_media
+    - image.style.thumbnail
+    - node.type.recipes
+  module:
+    - media
+    - text
+    - user
+id: node.recipes.teaser
+targetEntityType: node
+bundle: recipes
+mode: teaser
+content:
+  body:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 140
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_media:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_chef: true
+  field_cook_time: true
+  field_cuisine: true
+  field_difficulty: true
+  field_format: true
+  field_ingredients: true
+  field_instructions: true

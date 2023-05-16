@@ -1,0 +1,8 @@
+uuid: 3c0950ca-fa3e-4e29-b546-987f747ed7c8
+langcode: en
+status: true
+dependencies: {  }
+name: Format
+vid: format
+description: 'For example: main dish, dessert, pastry, side dish, soup...'
+weight: 0

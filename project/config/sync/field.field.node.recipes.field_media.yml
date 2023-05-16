@@ -1,0 +1,31 @@
+uuid: 3fdccf5d-61bc-47cb-bb20-00b830fe599b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media
+    - media.type.image
+    - media.type.remote_video
+    - node.type.recipes
+id: node.recipes.field_media
+field_name: field_media
+entity_type: node
+bundle: recipes
+label: Media
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      remote_video: remote_video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

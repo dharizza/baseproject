@@ -1,0 +1,89 @@
+{
+    "_links": {
+        "self": {
+            "href": "https:\/\/8080-dharizza-baseproject-38tn03xvcxu.ws-us96b.gitpod.io\/taxonomy\/term\/3?_format=hal_json"
+        },
+        "type": {
+            "href": "https:\/\/8080-dharizza-baseproject-38tn03xvcxu.ws-us96b.gitpod.io\/rest\/type\/taxonomy_term\/cuisine"
+        },
+        "https:\/\/8080-dharizza-baseproject-38tn03xvcxu.ws-us96b.gitpod.io\/rest\/relation\/taxonomy_term\/cuisine\/parent": [
+            null
+        ]
+    },
+    "tid": [
+        {
+            "value": 3
+        }
+    ],
+    "uuid": [
+        {
+            "value": "0fe45c00-c48a-4f2e-b216-d199d48e0c5e"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "cuisine"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "2023-05-08T23:48:28+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "Indian food",
+            "lang": "en"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "_embedded": {
+        "https:\/\/8080-dharizza-baseproject-38tn03xvcxu.ws-us96b.gitpod.io\/rest\/relation\/taxonomy_term\/cuisine\/parent": [
+            null
+        ]
+    },
+    "changed": [
+        {
+            "value": "2023-05-08T23:48:28+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "path": [
+        {
+            "alias": null,
+            "pid": null,
+            "langcode": "en",
+            "lang": "en"
+        }
+    ]
+}
