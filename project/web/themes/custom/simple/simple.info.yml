@@ -1,0 +1,20 @@
+name: Simple
+type: theme
+base theme: false
+description: A simple theme that implements a very basic design.
+package: Custom
+core_version_requirement: ^10
+libraries:
+  - simple/global
+  - simple/simple-layout
+regions:
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  featured: 'Featured'
+  breadcrumb: 'Breadcrumb'
+  content: 'Content'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  prefooter: 'Prefooter'
+  footer: 'Footer'

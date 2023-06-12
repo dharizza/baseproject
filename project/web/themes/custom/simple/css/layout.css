@@ -1,0 +1,18 @@
+main {
+    display: flex;
+}
+
+.layout-content {
+    width: 50%;
+    order: 2;
+}
+
+.layout-sidebar-first {
+    width: 25%;
+    order: 1;
+}
+
+.layout-sidebar-second {
+    width: 25%;
+    order: 3;
+}
