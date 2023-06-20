@@ -1,6 +1,16 @@
 button:
   label: 'Button'
   description: 'Button component'
+  variants:
+    default:
+      label: Default button
+      variant: green
+    green:
+      label: Green button
+      description: Button with green background
+    link:
+      label: Link with icon
+      description: Button without background with arrow icon.
   fields:
     text:
       type: string
