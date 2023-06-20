@@ -7,6 +7,7 @@ libraries:
   - ucr/base
   - ucr/messages
   - core/normalize
+  - ucr/font-awesome
 libraries-extend:
   user/drupal.user:
     - ucr/user
