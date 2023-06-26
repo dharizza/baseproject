@@ -1,0 +1,11 @@
+<div class="card card__title-text-cta card__title-text-cta--{{ variant }}">
+  {% if title %}
+    <h5 class="card__title">{{ title }}</h5>
+  {% endif %}
+  {% if text %}
+    <p class="card__text">{{ text }}</p>
+  {% endif %}
+  {% if cta %}
+    <div class="card__cta">{{ cta }}</div>
+  {% endif %}
+</div>
