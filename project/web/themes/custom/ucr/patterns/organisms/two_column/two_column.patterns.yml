@@ -1,0 +1,20 @@
+two_column:
+  label: 'Two column'
+  description: 'Component to add content in two columns.'
+  fields:
+    left:
+      type: mixed
+      label: Left Content
+      description: Content to be placed in the left column.
+      preview: 'Column 1'
+    right:
+      type: mixed
+      label: Right Content
+      description: Content to be placed in the right column.
+      preview: 'Column 2'
+  libraries:
+    -
+      two_column:
+        css:
+          component:
+            css/styles.css: {}

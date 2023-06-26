@@ -25,6 +25,7 @@
         "drupal/devel": "^5.1",
         "drupal/gin": "^3.0@RC",
         "drupal/paragraphs": "^1.15",
+        "drupal/ui_patterns": "^1.5",
         "drush/drush": "^11.5"
     },
     "conflict": {

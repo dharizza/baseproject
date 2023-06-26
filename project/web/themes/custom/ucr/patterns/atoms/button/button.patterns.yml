@@ -1,0 +1,33 @@
+button:
+  label: 'Button'
+  description: 'Button component'
+  variants:
+    default:
+      label: Default button
+      variant: green
+    green:
+      label: Green button
+      description: Button with green background
+    link:
+      label: Link with icon
+      description: Button without background with arrow icon.
+    outlined:
+      label: Outlined button
+      description: Button with transparent background and coloured border.
+  fields:
+    text:
+      type: string
+      label: Button text
+      description: Text to be placed on the button.
+      preview: 'Read more'
+    url:
+      type: url
+      label: URL
+      description: URL that user will be redirected to.
+      preview: https://google.com
+  libraries:
+    -
+      button:
+        css:
+          component:
+            css/styles.css: {}
