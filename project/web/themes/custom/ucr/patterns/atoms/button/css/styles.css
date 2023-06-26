@@ -29,3 +29,28 @@
     margin-left: 5px;
     color: #008081;
 }
+
+.btn.btn--outlined {
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 0;
+    color: #008081;
+}
+
+.card__title-text-cta--orange .btn.btn--outlined,
+.card__title-text-cta--blue .btn.btn--outlined {
+    color: white;
+}
+
+.card__title-text-cta--orange .btn.btn--outlined:hover {
+    background-color: white;
+    border: #C44B12;
+    color: #C44B12;
+}
+
+
+.card__title-text-cta--blue .btn.btn--outlined:hover {
+    background-color: white;
+    border: #154D61;
+    color: #154D61;
+}

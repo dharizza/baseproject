@@ -11,6 +11,9 @@ button:
     link:
       label: Link with icon
       description: Button without background with arrow icon.
+    outlined:
+      label: Outlined button
+      description: Button with transparent background and coloured border.
   fields:
     text:
       type: string
