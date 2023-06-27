@@ -21,4 +21,15 @@ class HelloWorldController extends ControllerBase {
     return $build;
   }
 
+  /**
+   * Builds response for helloPerson.
+   */
+  public function hello($name) {
+    $build['hello'] = [
+      '#markup' => 'Hello ' . $name . '!',
+    ];
+
+    return $build;
+  }
+
 }

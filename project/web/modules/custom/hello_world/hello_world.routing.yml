@@ -5,4 +5,11 @@ hello_world.hello:
     _controller: '\Drupal\hello_world\Controller\HelloWorldController::build'
   requirements:
     _permission: 'access content'
-    
+
+hello_world.hello_person:
+  path: '/hello/{name}'
+  defaults:
+    _title: 'Hello World - Person'
+    _controller: '\Drupal\hello_world\Controller\HelloWorldController::hello'
+  requirements:
+    _permission: 'access content'
